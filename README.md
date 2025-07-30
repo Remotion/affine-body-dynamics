@@ -1,6 +1,8 @@
-# Affine Body Dynamics
+# Autodesk's Affine Body Dynamics
 
 ## Fast, robust, accurate, intersection-free rigid body simulations with contact forces and joint constraints based on [Affine Body Dynamics](https://dl.acm.org/doi/abs/10.1145/3528223.3530064)
+
+This is an implementation of the [Affine Body Dynamics](https://dl.acm.org/doi/abs/10.1145/3528223.3530064) method as described and developed by Lei Lan et al. The code is based on the [Rigid IPC](https://github.com/ipc-sim/rigid-ipc) implementation by Zachary Ferguson et al.
 
 
 | [DSUB - 25pin](inputs/dsub_25pin/dsub.json)                   | [Gripper](inputs/gripper/gripper_with_screw_torque.json)
