@@ -1,0 +1,373 @@
+{
+    "scene_type": "distance_barrier_rb_problem",
+    "solver": "ipc_solver",
+    "timestep": 0.001,
+    "max_time": 0.28,
+    "distance_barrier_constraint": {        
+        "initial_barrier_activation_distance": 1e-1,
+        "minimum_separation_distance": 1e-2
+    },
+    "ipc_solver": {
+        "velocity_conv_tol": 1e-2
+    },
+    "friction_constraints": {
+        "iterations": -1
+    },
+    "rigid_body_problem": {
+        "coefficient_restitution": -1,
+        "coefficient_friction": 0.0,
+        "gravity": [
+            0,
+            0,
+            0
+        ],
+        "orthogonality_stiffness": 1e9,
+        "rigid_bodies": [
+            {
+                "mesh": "gripper\\bracket.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\claw.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\claw2.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\clawLink.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\clawLink2.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\L_hinge.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\L_hinge2.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\pusher.obj",
+                "density": 7e-3,
+                "force": [
+                    2000000.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "mesh": "gripper\\pusherLink.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\pusherLink2.obj",
+                "density": 7e-3
+            },
+            {
+                "mesh": "gripper\\cylinder_small.obj",
+                "density": 7e-3
+            }
+        ],
+        "linear_constraints": [
+            {
+                "type": "pin_world",
+                "body_name": "bracket",
+                "body_point": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "bracket",
+                "body_point": [
+                    0.0,
+                    1.0,
+                    0.0
+                ]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "bracket",
+                "body_point": [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "bracket",
+                "bodyA_point": [
+                    38.213,
+                    9,
+                    -29.734
+                ],
+                "bodyB_name": "L_hinge"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "bracket",
+                "bodyA_point": [
+                    38.213,
+                    -9,
+                    -29.734
+                ],
+                "bodyB_name": "L_hinge"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "claw",
+                "bodyA_point": [
+                    66,
+                    9,
+                    -25.836
+                ],
+                "bodyB_name": "L_hinge"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "claw",
+                "bodyA_point": [
+                    66,
+                    -9,
+                    -25.836
+                ],
+                "bodyB_name": "L_hinge"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "clawLink",
+                "bodyA_point": [
+                    69.697,
+                    9,
+                    -14.42
+                ],
+                "bodyB_name": "claw"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "clawLink",
+                "bodyA_point": [
+                    69.697,
+                    -9,
+                    -14.42
+                ],
+                "bodyB_name": "claw"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "clawLink",
+                "bodyA_point": [
+                    46,
+                    9,
+                    -20.5
+                ],
+                "bodyB_name": "bracket"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "clawLink",
+                "bodyA_point": [
+                    46,
+                    -9,
+                    -20.5
+                ],
+                "bodyB_name": "bracket"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "L_hinge",
+                "bodyA_point": [
+                    30,
+                    9,
+                    -15.5
+                ],
+                "bodyB_name": "pusherLink"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "L_hinge",
+                "bodyA_point": [
+                    30,
+                    -9,
+                    -15.5
+                ],
+                "bodyB_name": "pusherLink"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "pusher",
+                "bodyA_point": [
+                    20.5,
+                    9,
+                    -14
+                ],
+                "bodyB_name": "pusherLink"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "pusher",
+                "bodyA_point": [
+                    20.5,
+                    -9,
+                    -14
+                ],
+                "bodyB_name": "pusherLink"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "pusher",
+                "bodyA_point": [
+                    20.5,
+                    9,
+                    14
+                ],
+                "bodyB_name": "pusherLink2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "pusher",
+                "bodyA_point": [
+                    20.5,
+                    -9,
+                    14
+                ],
+                "bodyB_name": "pusherLink2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "L_hinge2",
+                "bodyA_point": [
+                    30,
+                    9,
+                    15.5
+                ],
+                "bodyB_name": "pusherLink2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "L_hinge2",
+                "bodyA_point": [
+                    30,
+                    -9,
+                    15.5
+                ],
+                "bodyB_name": "pusherLink2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "bracket",
+                "bodyA_point": [
+                    38.213,
+                    9,
+                    29.733
+                ],
+                "bodyB_name": "L_hinge2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "bracket",
+                "bodyA_point": [
+                    38.213,
+                    -9,
+                    29.733
+                ],
+                "bodyB_name": "L_hinge2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "clawLink2",
+                "bodyA_point": [
+                    46,
+                    9,
+                    20.5
+                ],
+                "bodyB_name": "bracket"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "clawLink2",
+                "bodyA_point": [
+                    46,
+                    -9,
+                    20.5
+                ],
+                "bodyB_name": "bracket"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "clawLink2",
+                "bodyA_point": [
+                    69.697,
+                    9,
+                    14.42
+                ],
+                "bodyB_name": "claw2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "clawLink2",
+                "bodyA_point": [
+                    69.697,
+                    -9,
+                    14.42
+                ],
+                "bodyB_name": "claw2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "claw2",
+                "bodyA_point": [
+                    66,
+                    9,
+                    25.836
+                ],
+                "bodyB_name": "L_hinge2"
+            },
+            {
+                "type": "pin_joint",
+                "bodyA_name": "claw2",
+                "bodyA_point": [
+                    66,
+                    -9,
+                    25.836
+                ],
+                "bodyB_name": "L_hinge2"
+            },
+            {
+                "type": "pin_world",
+                "body_name": "cylinder_small",
+                "body_point": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "cylinder_small",
+                "body_point": [
+                    0.0,
+                    1.0,
+                    0.0
+                ]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "cylinder_small",
+                "body_point": [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,344 @@
+{
+    "scene_type": "distance_barrier_rb_problem",
+    "solver": "ipc_solver",
+    "timestep": 0.001,
+    "max_time": 0.32,
+    "distance_barrier_constraint": {
+        "barrier_type": "ipc",
+        "initial_barrier_activation_distance": 1e-2,
+        "minimum_separation_distance": 0.0
+    },
+    "ipc_solver": {
+        "velocity_conv_tol": 1e-4
+    },
+    "friction_constraints": {
+        "iterations": -1
+    },
+    "rigid_body_problem": {
+        "coefficient_restitution": -1,
+        "coefficient_friction": 0.1,
+        "gravity": [0, -9.81e3, 0],
+        "orthogonality_stiffness": 1e9,
+        "rigid_bodies": [{
+            "mesh": "wrecking-ball\\ball.obj",
+            "position": [-10, 10, 0],
+            "rotation": [0, 0, -1.57],
+            "force":[0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-9, 10, 0],
+            "rotation": [0, 1.57, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-8, 10, 0],
+            "rotation": [0, 0, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-7, 10, 0],
+            "rotation": [0, 1.57, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-6, 10, 0],
+            "rotation": [0, 0, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-5, 10, 0],
+            "rotation": [0, 1.57, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-4, 10, 0],
+            "rotation": [0, 0, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-3, 10, 0],
+            "rotation": [0, 1.57, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-2, 10, 0],
+            "rotation": [0, 0, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link.obj",
+            "position": [-1, 10, 0],
+            "rotation": [0, 1.57, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "wrecking-ball\\link_f.obj",
+            "position": [0, 10, 0],
+            "rotation": [0, 0, -1.57],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "slope//floor.obj",
+            "position": [0, -5.65, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -5, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -3.99, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -2.98, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },{
+            "mesh": "cube.obj",
+            "position": [0, -1.97, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -5, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -3.99, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -2.98, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -1.97, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -5, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -3.99, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -2.98, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [0, -1.97, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -5, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -3.99, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -2.98, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -1.97, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -5, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -3.99, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -2.98, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -1.97, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -5, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -3.99, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -2.98, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [1.01, -1.97, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -5, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -3.99, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -2.98, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -1.97, 0],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -5, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -3.99, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -2.98, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -1.97, 1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -5, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -3.99, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -2.98, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        },
+        {
+            "mesh": "cube.obj",
+            "position": [-1.01, -1.97, -1.01],
+            "rotation": [0, 0, 0],
+            "density":7.8e-3
+        }
+    ],
+        "linear_constraints": [
+            {
+                "type": "pin_world",
+                "body_name": "link_f",
+                "body_point": [0.0, 0.0, 1.0]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "link_f",
+                "body_point": [1.0, 0.0, 0.0]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "link_f",
+                "body_point": [0.0, 1.0, 0.0]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "floor",
+                "body_point": [0.0, 0.0, 1.0]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "floor",
+                "body_point": [1.0, 0.0, 0.0]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "floor",
+                "body_point": [0.0, 1.0, 0.0]
+            }
+        ]
+    }
+}

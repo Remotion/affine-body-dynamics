@@ -1,0 +1,88 @@
+{
+    "scene_type": "distance_barrier_rb_problem",
+    "solver": "ipc_solver",
+    "timestep": 0.01,
+    "max_time": 1,
+    "distance_barrier_constraint": {
+        "initial_barrier_activation_distance": 1e-5
+    },
+    "ipc_solver": {
+        "velocity_conv_tol": 1e-4
+    },
+    "friction_constraints": {
+        "iterations": -1
+    },
+    "rigid_body_problem": {
+        "coefficient_restitution": 0.0,
+        "coefficient_friction": 0.0,
+        "gravity": [
+            0,
+            0.0,
+            0
+        ],
+        "rigid_bodies": [
+            {
+                "mesh": "dsub_25pin\\1.obj",
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "force": [
+                    0.0,
+                    -0.034260444,
+                    0.0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "density": 7800
+            },
+            {
+                "mesh": "dsub_25pin\\0.obj",                
+                "position": [
+                    0,
+                    0,
+                    0
+                ],
+                "rotation": [
+                    0,
+                    0,
+                    0
+                ],
+                "density": 7800
+            }
+        ],
+        "linear_constraints": [
+            {
+                "type": "pin_world",
+                "body_name": "0",
+                "body_point": [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "0",
+                "body_point": [
+                    1.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            {
+                "type": "pin_world",
+                "body_name": "0",
+                "body_point": [
+                    0.0,
+                    1.0,
+                    0.0
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,38 @@
+{
+    "scene_type": "distance_barrier_rb_problem",
+    "solver": "ipc_solver",
+    "timestep": 0.01,
+    "max_time": 1.0,
+    "distance_barrier_constraint": {        
+        "initial_barrier_activation_distance": 1e-3,
+        "minimum_separation_distance": 1e-5
+    },
+    "ipc_solver": {
+        "velocity_conv_tol": 1e-5
+    },
+    "friction_constraints": {
+        "iterations": -1
+    },
+    "rigid_body_problem": {
+        "coefficient_restitution": 1,
+        "coefficient_friction": 0.3,
+        "gravity": [0, 0.0, 0],
+        "orthogonality_stiffness": 1e9,
+        "rigid_bodies": [
+        {
+            "mesh": "simple_tets\\top.obj",
+            "position": [0, 0, 0],
+            "force": [0, 0, 0],
+            "rotation": [0.0, 0.0, 0],
+            "density": 1000
+        },
+        {
+            "mesh": "simple_tets\\bot.obj",
+            "position": [0.5, 0.0, 0],
+            "rotation": [0, 0, 0.0],
+            "force": [0, 0.0, 3000000.0],
+            "density": 1000
+        }
+    ]
+    }
+}
